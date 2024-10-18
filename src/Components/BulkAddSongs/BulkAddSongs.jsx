@@ -72,7 +72,7 @@ function BulkAddSongs() {
         };
 
         // Submit each song data to your API
-        const apiResponse = await axios.post("http://localhost:5000/api/posts/add", {
+        const apiResponse = await axios.post("https://music-backend-j4oc.onrender.com/api/posts/add", {
           songData,
         });
 

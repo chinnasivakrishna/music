@@ -51,7 +51,7 @@ function AddSong() {
       type,
     };
     try{
-      const response = await axios.post("http://localhost:5000/api/posts/add",{
+      const response = await axios.post("https://music-backend-j4oc.onrender.com/api/posts/add",{
         songData
       });
       if(response){

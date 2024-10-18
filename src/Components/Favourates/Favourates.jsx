@@ -21,7 +21,7 @@ const Favourates = () => {
       }
       const fetchSongs = async () => {
         try {
-          const response = await axios.post(`http://localhost:5000/api/posts/favourate_fetch`,{
+          const response = await axios.post(`https://music-backend-j4oc.onrender.com/api/posts/favourate_fetch`,{
             Email :user
             });
           const fetchedSongs = response.data;
@@ -73,7 +73,7 @@ const Favourates = () => {
       // Here you can implement logic to add the song to a favorites list, or make a POST request
       console.log(`Added ${song._id} to favorites!`);
       try{
-        const response = await axios.post("http://localhost:5000/api/posts/remove_favourate",{
+        const response = await axios.post("https://music-backend-j4oc.onrender.com/api/posts/remove_favourate",{
           id: song._id
         });
         console.log(response)
